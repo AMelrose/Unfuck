@@ -12,17 +12,19 @@ the control flow structures yourself.
 
 ### Usage
 
-Unfuck is written to work with the command line only.
+Unfuck was written in Python 2.7, so you'll need a compatible version of Python to execute Unfuck.
 
-To run an Unfuck program type in the command line:
+Unfuck is intended to be run from the command line.
+
+To run an Unfuck without input:
 ```sh
 python unfuck.py -r yourprogram.uf
 ```
-The Unfuck interpreter only accepts raw input passed as a parameter or through stdin.
+Unfuck only accepts raw data passed to it as an argument or through standard input from another process:
 ```sh
 python unfuck.py -r yourprogram.uf Some input to be processed
 ```
-Windows CMD prompt:
+and:
 ```sh
 TYPE somefile.txt | python unfuck.py -r yourprogram.uf
 ```
@@ -335,8 +337,7 @@ Current cell is greater than 0 (Step 2):
 ### So, why the name?
 
 ```
-The language has gone through a few ideas for names, of which I won't
-be mentioning. However, the name that was chosen made more sense for
+The language has gone through a few ideas for names. However, the name that was chosen made more sense for
 a couple of reasons; It is based on Brainfuck, hence the last four
 letters of the name. Also, while I was designing the language,
 I noticed a resemblence of the code I was writting in Unfuck to that
