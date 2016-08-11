@@ -116,8 +116,6 @@ ops = {
 def Main():
   global pPtr, pard, parp
   while pPtr < len(p):
-    if pPtr < 0:
-      raise Exception("Unfuck program pointer is running into negative indices!")
     op = p[pPtr]
     if op == "(":
       pard += parp
